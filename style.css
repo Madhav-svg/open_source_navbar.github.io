@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:  rgb(24, 24, 24);
+    font-family: "Poppins", serif;
+
+}
+
+nav {
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgb(22, 22, 22), rgb(30, 30, 30));
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+nav li:first-child {
+    margin: 10px;
+    margin-right: auto;
+}
+
+nav li {
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+
+.nav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 1px 2px 3px rgb(255, 255, 255); */
+    width: 100vh;
+    height: 100vh;
+}
+
+.nav a:hover {
+    transition: 0.5s;
+    background-color: rgb(41, 41, 41);
+    width: 100vh;
+    height: 100%;
+    border-bottom: 1px solid white;
+    padding: 2px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.sidebar {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 252px;
+    z-index: 999;
+    background-image: linear-gradient(to bottom, rgb(24, 24, 24), rgb(39, 39, 39));
+
+}
+
+.btn {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .btn {
+        display: block;
+    }
+}
+
+@media(max-width: 420px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+.hideOnMobile:hover {
+    border-bottom: 2px solid black;
+}
