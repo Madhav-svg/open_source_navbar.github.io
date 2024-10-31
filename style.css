@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color:  rgb(24, 24, 24);
+    background-color: rgb(24, 24, 24);
     font-family: "Poppins", serif;
 
 }
@@ -45,7 +45,7 @@ nav li {
 
 .nav a:hover {
     transition: 0.5s;
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(22, 22, 22);
     width: 100vh;
     height: 100%;
     border-bottom: 1px solid white;
@@ -86,9 +86,55 @@ nav li {
 @media(max-width: 420px) {
     .sidebar {
         width: 100%;
+        border-radius: 20px;
     }
 }
 
 .hideOnMobile:hover {
-    border-bottom: 2px solid black;
+    pointer-events: none;
+}
+
+.column-1_img span {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-left:13vh;
+}
+
+.column-2_txt {
+    margin: 0px;
+    max-width: 100vh;
+}
+.parent_txt {
+    display: flex;
+    justify-content: center;
+
+}
+@media(min-width:1440px){
+    .parent_txt{
+        margin-top: -37vh;
+        margin-right: 0vh;
+    }
+    .column-2_txt{
+        max-width: 80vh;
+    }
+}
+@media(min-width:760px){
+    .parent_txt{
+        margin-top: -40vh;
+        margin-right: -40vh;
+    }
+    .column-2_txt{
+        max-width: 90vh;
+    }
+}
+@media(min-width:1020px){
+    .parent_txt{
+        margin-top: -39vh;
+        margin-right: -18vh;
+        max-height: 50vh;
+    }
+    .column-2_txt{
+        max-width: 120vh;
+    }
 }
