@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(24, 24, 24);
+    font-family: "Poppins", serif;
+
+}
+
+nav {
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgb(22, 22, 22), rgb(39, 39, 39));
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+nav li:first-child {
+    margin: 10px;
+    margin-right: auto;
+}
+
+nav li {
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+
+.nav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 1px 2px 3px rgb(255, 255, 255); */
+    width: 100vh;
+    height: 100vh;
+}
+
+.nav a:hover {
+    transition: 0.5s;
+    background-color: rgb(22, 22, 22);
+    width: 100vh;
+    height: 100%;
+    border-bottom: 1px solid white;
+    padding: 2px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.sidebar {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 252px;
+    z-index: 999;
+    background-image: linear-gradient(to bottom, rgb(24, 24, 24), rgb(39, 39, 39));
+
+}
+
+.btn {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .btn {
+        display: block;
+    }
+}
+
+@media(max-width: 420px) {
+    .sidebar {
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+.hideOnMobile:hover {
+    pointer-events: none;
+}
+
+.column-1_img span {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-left:13vh;
+}
+
+.column-2_txt {
+    margin: 0px;
+    max-width: 100vh;
+}
+.parent_txt {
+    display: flex;
+    justify-content: center;
+
+}
+@media(min-width:1440px){
+    .parent_txt{
+        margin-top: -37vh;
+        margin-right: 0vh;
+    }
+    .column-2_txt{
+        max-width: 80vh;
+    }
+}
+@media(min-width:760px){
+    .parent_txt{
+        margin-top: -36vh;
+        margin-right: -30vh;
+    }
+    .column-2_txt{
+        max-width: 50vh;
+    }
+}
+@media(min-width:1020px){
+    .parent_txt{
+        margin-top: -39vh;
+        margin-right: -36vh;
+        max-height: 50vh;
+    }
+    .column-2_txt{
+        max-width: 90vh;
+    }
+}
+@media(min-width:760px){
+    .column-1_img:first-child {
+        margin-left: -60px;
+    }
+}

@@ -1,0 +1,97 @@
+<!-- making responisve without bootstrap -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav">
+        <ul type="none">
+
+            <li><a href="#" id="no-hover">Madhav</a></li>
+            <li><a href="about.html" class="hideOnMobile" id="itens">Services</a></li>
+            <li><a href="projects.html" class="hideOnMobile">Projects</a></li>
+            <li onclick="showSidebar()" class="btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                        viewBox="0 -960 960 960" width="26px" fill="white" id="no-hover">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+
+        </ul>
+        <ul type="none" class="sidebar">
+
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" id="no-hover" height="26px"
+                        viewBox="0 -960 960 960" width="26px" fill="white">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="about.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+
+        </ul>
+    </nav>
+    <section class="about_me">
+        <div class="column-1_img">
+            <img src="img.jpeg" style="width: 25vh; border-radius: 15px; margin: 18px; margin-left: 88px; "><span
+                style="color: rgb(222, 222, 222); " class="_about_img">📍:Delhi,Janakpuri</span>
+            <div class="parent_txt">
+                <div class="column-2_txt" style="display: grid; flex-direction: column">
+
+                    <div class="txt"
+                        style="box-shadow: 8px 8px 16px white; color: white; background-color: rgb(128, 127, 127); border-radius: 14px; padding: 15px; border: 2px solid white; ">
+                        <p> I'm 11 years old and currently in the 7th grade, and I absolutely love exploring the
+                            world of
+                            technology. School has been a fantastic journey for me, filled with new experiences and
+                            subjects
+                            that spark my curiosity. I enjoy learning about various topics, but what excites me the
+                            most is
+                            computer science. My interests have led me to dive deep into coding and programming. I
+                            find it
+                            fascinating how we can create amazing things from just lines of code. I'm already
+                            thinking about
+                            projects I want to work on in the future, and I can't wait to share them with my friends
+                            and
+                            teachers</p>
+
+                        <p> Over the past year, I’ve gained a solid understanding of HTML, CSS, and JavaScript.
+                            These
+                            languages have unlocked my creativity, enabling me to build websites and grasp how the
+                            web
+                            functions. Each line of code I write is like a new achievement, and I love the thrill of
+                            solving
+                            problems and bringing my projects to life. I know there’s so much more to explore, and
+                            I’m eager
+                            to learn additional languages like Python, Ruby, and Swift. By expanding my skills, I
+                            aim not
+                            only to improve my own projects but also to share my passion for coding with others!
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+
+    </script>
+</body>
+
+</html>
