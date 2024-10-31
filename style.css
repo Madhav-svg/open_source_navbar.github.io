@@ -121,11 +121,11 @@ nav li {
 }
 @media(min-width:760px){
     .parent_txt{
-        margin-top: -40vh;
-        margin-right: -40vh;
+        margin-top: -35vh;
+        margin-right: -30vh;
     }
     .column-2_txt{
-        max-width: 90vh;
+        max-width: 30vh;
     }
 }
 @media(min-width:1020px){
